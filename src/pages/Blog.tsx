@@ -2,8 +2,10 @@ import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { Calendar, Clock, ArrowRight, Search } from "lucide-react";
 import { Input } from "@/components/ui/input";
+import { useState } from "react";
 
 const Blog = () => {
+  const [selectedCategory, setSelectedCategory] = useState("All");
   const featuredPost = {
     title: "The Complete Guide to Digital Marketing ROI in 2024",
     excerpt: "Learn how to measure, optimize, and maximize your digital marketing return on investment with proven strategies and real-world examples.",
@@ -57,7 +59,7 @@ const Blog = () => {
       date: "December 1, 2024",
       readTime: "6 min read",
       category: "PPC",
-      image: "https://images.unsplash.com/photo-1553028826-f4804151e219?w=400&h=250&fit=crop",
+      image: "./Ppc Vs Seo.png",
       slug: "ppc-vs-seo-strategy"
     },
     {
@@ -71,7 +73,12 @@ const Blog = () => {
     }
   ];
 
-  const categories = ["All", "Strategy", "SEO", "Content Marketing", "Social Media", "PPC", "Email Marketing", "Branding"];
+  const categories = ["All", "SEO", "Content Marketing", "Social Media", "PPC", "Email Marketing", "Branding"];
+
+  // Filter posts based on selected category
+  const filteredPosts = selectedCategory === "All" 
+    ? posts 
+    : posts.filter(post => post.category === selectedCategory);
 
   return (
     <div className="min-h-screen pt-16">
@@ -152,9 +159,10 @@ const Blog = () => {
             {categories.map((category) => (
               <Button
                 key={category}
-                variant={category === "All" ? "default" : "outline"}
+                variant={selectedCategory === category ? "default" : "outline"}
                 size="sm"
-                
+                onClick={() => setSelectedCategory(category)}
+                className="transition-all duration-200 hover:scale-105"
               >
                 {category}
               </Button>
@@ -167,7 +175,7 @@ const Blog = () => {
       <section className="py-20">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {posts.map((post, index) => (
+            {filteredPosts.map((post, index) => (
               <article 
                 key={post.slug}
                 className="bg-card rounded-2xl overflow-hidden border border-border/50 hover-lift group fade-in"
