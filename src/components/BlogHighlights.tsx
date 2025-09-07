@@ -97,7 +97,7 @@ const BlogHighlights = () => {
         </div>
 
         <div className="text-center mt-12 fade-in-delay-3">
-          <Button asChild variant="outline" size="lg" className="hover-lift">
+          <Button asChild variant="outline" size="lg">
             <Link to="/blog">
               View All Articles
             </Link>

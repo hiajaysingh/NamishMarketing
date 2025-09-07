@@ -112,12 +112,12 @@ const Services = () => {
                   ))}
                 </ul>
                 
-                <div className="border-t border-border/50 pt-6">
+                {/* <div className="border-t border-border/50 pt-6">
                   <div className="text-primary font-semibold mb-4">{service.price}</div>
                   <Button variant="outline" size="sm" className="w-full hover-lift">
                     Learn More
                   </Button>
-                </div>
+                </div> */}
               </div>
             ))}
           </div>
@@ -171,13 +171,13 @@ const Services = () => {
               Let's discuss which services are right for your business and create a custom strategy for growth.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button asChild size="lg" variant="secondary" className="hover-lift group">
+              <Button asChild size="lg" variant="secondary">
                 <Link to="/contact" className="flex items-center gap-2">
                   Book Free Consultation
                   <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
                 </Link>
               </Button>
-              <Button asChild size="lg" variant="outline" className="border-white/30 text-white hover:bg-white hover:text-primary">
+              <Button asChild size="lg" variant="outline" className="border-white/30 text-primary">
                 <Link to="/portfolio">
                   View Our Work
                 </Link>

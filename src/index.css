@@ -221,18 +221,10 @@
     animation: bounceIn 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55) forwards;
   }
   
-  /* Hover Effects */
-  .hover-lift {
-    transition: var(--transition-smooth);
-  }
   
   .hover-lift:hover {
     @apply -translate-y-2;
     box-shadow: var(--shadow-large);
-  }
-  
-  .hover-glow {
-    transition: var(--transition-smooth);
   }
   
   .hover-glow:hover {

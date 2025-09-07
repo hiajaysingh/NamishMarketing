@@ -61,7 +61,7 @@ ${formData.message}`;
     {
       icon: MapPin,
       title: "Visit Us",
-      content: "123 Business Ave, City, State 12345",
+      content: "Madhya Pradesh",
       description: "Our main office location"
     }
   ];
@@ -201,7 +201,7 @@ ${formData.message}`;
 
               <div className="space-y-6">
                 {contactInfo.map((info) => (
-                  <div key={info.title} className="flex items-start gap-4 p-6 bg-card rounded-2xl border border-border/50 hover-lift">
+                  <div key={info.title} className="flex items-start gap-4 p-6 bg-card rounded-2xl border border-border/50">
                     <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center flex-shrink-0">
                       <info.icon size={24} className="text-primary" />
                     </div>
@@ -220,7 +220,7 @@ ${formData.message}`;
       </section>
 
       {/* Map Section (Optional) */}
-      <section className="py-20 bg-secondary">
+      {/* <section className="py-20 bg-secondary">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12 fade-in">
@@ -240,7 +240,7 @@ ${formData.message}`;
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
     </div>
   );
 };

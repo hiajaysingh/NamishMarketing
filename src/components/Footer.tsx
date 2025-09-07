@@ -52,7 +52,7 @@ const Footer = () => {
               We don't just sell services — we partner with you to achieve real business results.
             </p>
             <div className="flex space-x-4">
-              {socialLinks.map(social => <a key={social.label} href={social.href} className="w-10 h-10 bg-background rounded-lg flex items-center justify-center text-muted-foreground hover:text-primary hover:bg-accent transition-all duration-300 hover-lift" aria-label={social.label}>
+              {socialLinks.map(social => <a key={social.label} href={social.href} className="w-10 h-10 bg-background rounded-lg flex items-center justify-center text-muted-foreground hover:text-primary hover:bg-accent transition-all duration-300 " aria-label={social.label}>
                   <social.icon size={20} />
                 </a>)}
             </div>
@@ -96,7 +96,7 @@ const Footer = () => {
               </div>
               <div className="flex items-center space-x-3 text-muted-foreground">
                 <MapPin size={18} className="text-primary" />
-                <span>123 Business Ave, City, State 12345</span>
+                <span>Madhya Pradesh</span>
               </div>
             </div>
           </div>

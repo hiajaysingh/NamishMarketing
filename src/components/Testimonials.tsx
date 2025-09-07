@@ -6,47 +6,48 @@ const Testimonials = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const testimonials = [
-    {
-      name: "Julian Koh",
-      position: "Founder & CEO",
-      company: "AEVO",
-      content: "Ajay is one of the most dedicated and sharp-minded people I've come across. He listens carefully, understands the real need, and then comes back with clarity that's rare to find. What impressed me most was his commitment, he doesn't just talk, he follows through with action. I have no doubt he's on the path to building something remarkable.",
-      rating: 5,
-      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face"
-    },
-    {
-      name: "Sahil Kathar",
-      position: "Content Creator & Blogger",
-      company: "Sahil Kathar",
-      content: "Ajay has been a solid support in my blogging journey. He understands content and marketing at a level that makes things simple yet powerful. What I appreciate most is his consistency and honesty — rare qualities in this space. Every conversation with him adds value, and I trust his vision is only going to take him further.",
-      rating: 5,
-      image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop&crop=face"
-    },
-    {
-      name: "Arvind",
-      position: "Founder",
-      company: "Pranil Tours & Travels",
-      content: "Ajay is someone who truly values relationships in business. From our very first interaction, I could see his clarity and genuine approach. He brings fresh ideas, listens carefully, and always keeps growth in focus. I respect his dedication and believe he has what it takes to create long-term impact in the business world.",
-      rating: 5,
-      image: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=150&h=150&fit=crop&crop=face"
-    },
-    {
-      name: "Managing Partner",
-      position: "Managing Partner",
-      company: "Elite SEO Agency",
-      content: "Ajay has been an incredible partner to work with. He and his team managed our projects with professionalism, attention to detail, and genuine ownership. What I value most is his ability to combine clear communication with consistent execution — qualities that are rare to find. It's been a smooth experience working alongside him, and I trust his journey ahead will be even bigger.",
-      rating: 5,
-      image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=150&h=150&fit=crop&crop=face"
-    },
-    {
-      name: "Fatemeh Nikayin",
-      position: "Founder",
-      company: "Reviero",
-      content: "Ajay is a rare mix of clarity and commitment. From the very beginning, I could sense his genuine passion for business and growth. He takes the time to understand, asks the right questions, and always brings thoughtful solutions to the table. I deeply respect his vision and believe he's building something that will make a lasting impact.",
-      rating: 5,
-      image: "https://images.unsplash.com/photo-1494790108755-2616b667f3cc?w=150&h=150&fit=crop&crop=face"
-    }
-  ];
+  {
+    name: "Julian Koh",
+    position: "Founder & CEO",
+    company: "AEVO",
+    content: "Ajay is one of the most dedicated and sharp-minded people I've come across. He listens carefully, understands the real need, and then comes back with clarity that's rare to find. What impressed me most was his commitment, he doesn't just talk, he follows through with action. I have no doubt he's on the path to building something remarkable.",
+    rating: 5,
+    image: "/testimonials/Julian Koh.jpg"
+  },
+  {
+    name: "Sahil Kathar",
+    position: "Content Creator & Blogger",
+    company: "Sahil Kathar",
+    content: "Ajay has been a solid support in my blogging journey. He understands content and marketing at a level that makes things simple yet powerful. What I appreciate most is his consistency and honesty — rare qualities in this space. Every conversation with him adds value, and I trust his vision is only going to take him further.",
+    rating: 5,
+    image: "/testimonials/Sahil Kathar.jpg"
+  },
+  {
+    name: "Arvind",
+    position: "Founder",
+    company: "Pranil Tours & Travels",
+    content: "Ajay is someone who truly values relationships in business. From our very first interaction, I could see his clarity and genuine approach. He brings fresh ideas, listens carefully, and always keeps growth in focus. I respect his dedication and believe he has what it takes to create long-term impact in the business world.",
+    rating: 5,
+    image: "/testimonials/Pranil Tours & Travels.jpg"
+  },
+  {
+    name: "Managing Partner",
+    position: "Managing Partner",
+    company: "Elite SEO Agency",
+    content: "Ajay has been an incredible partner to work with. He and his team managed our projects with professionalism, attention to detail, and genuine ownership. What I value most is his ability to combine clear communication with consistent execution — qualities that are rare to find. It's been a smooth experience working alongside him, and I trust his journey ahead will be even bigger.",
+    rating: 5,
+    image: "/testimonials/Elite SEO Agency.jpg"
+  },
+  {
+    name: "Fatemeh Nikayin",
+    position: "Founder",
+    company: "Reviero",
+    content: "Ajay is a rare mix of clarity and commitment. From the very beginning, I could sense his genuine passion for business and growth. He takes the time to understand, asks the right questions, and always brings thoughtful solutions to the table. I deeply respect his vision and believe he's building something that will make a lasting impact.",
+    rating: 5,
+    image: "/testimonials/Fatemeh Nikayin.jpg"
+  }
+];
+
 
   const nextTestimonial = () => {
     setCurrentIndex((prev) => (prev + 1) % testimonials.length);
@@ -116,7 +117,6 @@ const Testimonials = () => {
               variant="outline"
               size="icon"
               onClick={prevTestimonial}
-              className="rounded-full hover-lift"
             >
               <ChevronLeft size={20} />
             </Button>
@@ -137,42 +137,11 @@ const Testimonials = () => {
               variant="outline"
               size="icon"
               onClick={nextTestimonial}
-              className="rounded-full hover-lift"
+              // className="rounded-full hover-lift"
             >
               <ChevronRight size={20} />
             </Button>
           </div>
-        </div>
-
-        {/* Additional testimonials grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-16">
-          {testimonials.filter((_, index) => index !== currentIndex).slice(0, 3).map((testimonial, index) => (
-            <div
-              key={testimonial.name}
-              className="bg-secondary p-6 rounded-2xl border border-border/50 hover-lift cursor-pointer fade-in-delay-3"
-              onClick={() => setCurrentIndex(testimonials.indexOf(testimonial))}
-            >
-              <div className="flex space-x-1 mb-4">
-                {[...Array(testimonial.rating)].map((_, i) => (
-                  <Star key={i} size={16} className="text-yellow-400 fill-current" />
-                ))}
-              </div>
-              <p className="text-sm text-muted-foreground mb-4 line-clamp-3">
-                "{testimonial.content}"
-              </p>
-              <div className="flex items-center gap-3">
-                <img
-                  src={testimonial.image}
-                  alt={testimonial.name}
-                  className="w-10 h-10 rounded-full object-cover"
-                />
-                <div>
-                  <div className="font-medium text-sm">{testimonial.name}</div>
-                  <div className="text-xs text-muted-foreground">{testimonial.company}</div>
-                </div>
-              </div>
-            </div>
-          ))}
         </div>
       </div>
     </section>

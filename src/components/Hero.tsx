@@ -28,7 +28,7 @@ const Hero = () => {
                 </Link>
               </Button>
               
-              <Button asChild variant="outline" size="lg" className="border-2 hover-lift">
+              <Button asChild variant="outline" size="lg" className="border-2">
                 <Link to="/portfolio" className="flex items-center gap-2">
                   <Play size={18} />
                   View Our Work

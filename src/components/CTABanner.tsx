@@ -23,7 +23,7 @@ const CTABanner = () => {
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center fade-in-delay-1">
-              <Button asChild size="lg" variant="secondary" className="group hover-lift">
+              <Button asChild size="lg" variant="secondary">
                 <Link to="/contact" className="flex items-center gap-2">
                   <Calendar size={20} />
                   Book a Free Consultation

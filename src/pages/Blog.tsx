@@ -163,7 +163,7 @@ const Blog = () => {
                 key={category}
                 variant={category === "All" ? "default" : "outline"}
                 size="sm"
-                className="hover-lift"
+                
               >
                 {category}
               </Button>
@@ -243,7 +243,7 @@ const Blog = () => {
                 placeholder="Enter your email"
                 className="bg-white/10 border-white/20 text-white placeholder:text-white/70"
               />
-              <Button variant="secondary" className="hover-lift">
+              <Button variant="secondary" >
                 Subscribe
               </Button>
             </div>

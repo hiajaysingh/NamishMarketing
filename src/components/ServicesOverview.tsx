@@ -87,9 +87,9 @@ const ServicesOverview = () => {
                     </div>
                     <h4 className="text-xl font-semibold mb-4">{service.title}</h4>
                     <p className="text-muted-foreground leading-relaxed mb-6">{service.description}</p>
-                    <Button variant="outline" size="sm" className="hover-lift">
+                    {/* <Button variant="outline" size="sm">
                       Learn More
-                    </Button>
+                    </Button> */}
                   </div>
                 ))}
               </div>

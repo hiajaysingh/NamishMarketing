@@ -213,7 +213,7 @@ const Portfolio = () => {
             <p className="text-xl opacity-90">
               Let's discuss how we can help your business achieve similar results.
             </p>
-            <Button asChild size="lg" variant="secondary" className="hover-lift">
+            <Button asChild size="lg" variant="secondary" >
               <Link to="/contact">
                 Start Your Success Story
               </Link>
