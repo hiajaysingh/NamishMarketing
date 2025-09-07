@@ -25,10 +25,12 @@ const Footer = () => {
   }, {
     name: "Services",
     href: "/services"
-  }, {
-    name: "Portfolio",
-    href: "/portfolio"
-  }, {
+  }
+  // {
+  //   name: "Portfolio",
+  //   href: "/portfolio"
+  // }
+  , {
     name: "Blog",
     href: "/blog"
   }, {

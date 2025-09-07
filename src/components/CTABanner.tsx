@@ -31,15 +31,15 @@ const CTABanner = () => {
                 </Link>
               </Button>
               
-              <Button asChild size="lg" variant="outline" className="border-white/30 text-primary hover:bg-white hover:text-primary">
+              {/* <Button asChild size="lg" variant="outline" className="border-white/30 text-primary hover:bg-white hover:text-primary">
                 <Link to="/portfolio">
                   View Success Stories
                 </Link>
-              </Button>
+              </Button> */}
             </div>
             
             {/* Trust Indicators */}
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-8 pt-8 opacity-80 fade-in-delay-2">
+            {/* <div className="flex flex-col sm:flex-row items-center justify-center gap-8 pt-8 opacity-80 fade-in-delay-2">
               <div className="flex items-center gap-2">
                 <span className="text-2xl">⭐</span>
                 <span className="text-sm">5.0 Client Rating</span>
@@ -52,7 +52,7 @@ const CTABanner = () => {
                 <span className="text-2xl">📈</span>
                 <span className="text-sm">500% Average ROI</span>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

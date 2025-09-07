@@ -177,11 +177,11 @@ const Services = () => {
                   <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
                 </Link>
               </Button>
-              <Button asChild size="lg" variant="outline" className="border-white/30 text-primary">
+              {/* <Button asChild size="lg" variant="outline" className="border-white/30 text-primary">
                 <Link to="/portfolio">
                   View Our Work
                 </Link>
-              </Button>
+              </Button> */}
             </div>
           </div>
         </div>

@@ -74,7 +74,7 @@ const WhyChooseUs = () => {
         </div>
 
         {/* Stats Section */}
-        <div className="mt-20 pt-16 border-t border-border/50">
+        {/* <div className="mt-20 pt-16 border-t border-border/50">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             <div className="space-y-2 fade-in-delay-1">
               <div className="text-4xl font-bold text-primary">150+</div>
@@ -93,7 +93,7 @@ const WhyChooseUs = () => {
               <div className="text-muted-foreground">Support</div>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   );

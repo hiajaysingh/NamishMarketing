@@ -28,16 +28,16 @@ const Hero = () => {
                 </Link>
               </Button>
               
-              <Button asChild variant="outline" size="lg" className="border-2">
+              {/* <Button asChild variant="outline" size="lg" className="border-2">
                 <Link to="/portfolio" className="flex items-center gap-2">
                   <Play size={18} />
                   View Our Work
                 </Link>
-              </Button>
+              </Button> */}
             </div>
 
             {/* Trust Indicators */}
-            <div className="flex items-center gap-8 pt-8 fade-in-delay-2">
+            {/* <div className="flex items-center gap-8 pt-8 fade-in-delay-2">
               <div className="text-center">
                 <div className="text-2xl font-bold text-primary">150+</div>
                 <div className="text-sm text-muted-foreground">Happy Clients</div>
@@ -50,7 +50,7 @@ const Hero = () => {
                 <div className="text-2xl font-bold text-primary">5+</div>
                 <div className="text-sm text-muted-foreground">Years Experience</div>
               </div>
-            </div>
+            </div> */}
           </div>
 
           {/* Hero Image */}
