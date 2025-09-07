@@ -33,7 +33,7 @@ const Portfolio = () => {
     {
       title: "GrowthCo - PPC Campaign Optimization",
       category: "Paid Advertising",
-      image: "https://images.unsplash.com/photo-1553028826-f4804151e219?w=600&h=400&fit=crop",
+      image: "https://technians.com/wp-content/uploads/2020/02/Immediate-Results.jpg",
       description: "Optimized Google Ads and Facebook advertising campaigns, resulting in significantly improved ROI and lead quality.",
       results: [
         { metric: "ROI", value: "+420%" },
@@ -72,7 +72,7 @@ const Portfolio = () => {
     {
       title: "HealthTech Solutions - Content Marketing",
       category: "Content Strategy",
-      image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?w=600&h=400&fit=crop",
+      image: "./healthcare.png",
       description: "Established thought leadership in the healthcare technology space through strategic content marketing and SEO.",
       results: [
         { metric: "Organic Traffic", value: "+400%" },
