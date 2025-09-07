@@ -85,15 +85,6 @@ const Blog = () => {
             <p className="text-xl text-muted-foreground leading-relaxed mb-8">
               Stay ahead of the curve with actionable digital marketing strategies, industry insights, and growth tactics.
             </p>
-            
-            {/* Search Bar */}
-            <div className="max-w-md mx-auto relative">
-              <Search size={20} className="absolute left-3 top-1/2 transform -translate-y-1/2 text-muted-foreground" />
-              <Input 
-                placeholder="Search articles..."
-                className="pl-10 pr-4 py-3 bg-card border-border/50"
-              />
-            </div>
           </div>
         </div>
       </section>
