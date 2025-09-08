@@ -35,7 +35,7 @@ Company: ${formData.company || 'Not provided'}
 Message:
 ${formData.message}`;
 
-    const mailtoUrl = `mailto:viradiyapriyank7@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    const mailtoUrl = `mailto:ajaysingh52x@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
     
     window.location.href = mailtoUrl;
     
