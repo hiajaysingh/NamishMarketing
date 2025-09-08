@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
+  
+  <!-- Homepage -->
+  <url>
+    <loc>https://namishmarketing.com/</loc>
+    <lastmod>2024-12-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://namishmarketing.com/og-image.jpg</image:loc>
+      <image:title>Namish Marketing - Digital Marketing Agency</image:title>
+      <image:caption>Professional digital marketing services for growing businesses</image:caption>
+    </image:image>
+  </url>
+  
+  <!-- About Page -->
+  <url>
+    <loc>https://namishmarketing.com/about</loc>
+    <lastmod>2024-12-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- Services Page -->
+  <url>
+    <loc>https://namishmarketing.com/services</loc>
+    <lastmod>2024-12-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  
+  <!-- Blog Page -->
+  <url>
+    <loc>https://namishmarketing.com/blog</loc>
+    <lastmod>2024-12-20</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- Contact Page -->
+  <url>
+    <loc>https://namishmarketing.com/contact</loc>
+    <lastmod>2024-12-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <!-- Blog Posts -->
+  <url>
+    <loc>https://namishmarketing.com/blog/complete-guide-digital-marketing-roi-2024</loc>
+    <lastmod>2024-12-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=400&fit=crop</image:loc>
+      <image:title>The Complete Guide to Digital Marketing ROI in 2024</image:title>
+    </image:image>
+  </url>
+  
+  <url>
+    <loc>https://namishmarketing.com/blog/seo-strategies-2024</loc>
+    <lastmod>2024-12-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1432888622747-4eb9a8efeb07?w=400&h=250&fit=crop</image:loc>
+      <image:title>10 SEO Strategies That Actually Work in 2024</image:title>
+    </image:image>
+  </url>
+  
+  <url>
+    <loc>https://namishmarketing.com/blog/content-that-converts</loc>
+    <lastmod>2024-12-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1552664730-d307ca884978?w=400&h=250&fit=crop</image:loc>
+      <image:title>How to Create Content That Converts</image:title>
+    </image:image>
+  </url>
+  
+  <url>
+    <loc>https://namishmarketing.com/blog/social-media-roi</loc>
+    <lastmod>2024-12-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=400&h=250&fit=crop</image:loc>
+      <image:title>The ROI of Social Media Marketing</image:title>
+    </image:image>
+  </url>
+  
+  <url>
+    <loc>https://namishmarketing.com/blog/email-marketing-automation-guide</loc>
+    <lastmod>2024-12-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1596526131083-e8c633c948d2?w=400&h=250&fit=crop</image:loc>
+      <image:title>Email Marketing Automation: A Beginner's Guide</image:title>
+    </image:image>
+  </url>
+  
+  <url>
+    <loc>https://namishmarketing.com/blog/ppc-vs-seo-strategy</loc>
+    <lastmod>2024-12-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://namishmarketing.com/Ppc%20Vs%20Seo.png</image:loc>
+      <image:title>PPC vs SEO: Which Strategy Is Right for You?</image:title>
+    </image:image>
+  </url>
+  
+  <url>
+    <loc>https://namishmarketing.com/blog/building-brand-that-resonates</loc>
+    <lastmod>2024-11-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1559136555-9303baea8ebd?w=400&h=250&fit=crop</image:loc>
+      <image:title>Building a Brand That Resonates in 2024</image:title>
+    </image:image>
+  </url>
+  
+</urlset>

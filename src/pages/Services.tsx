@@ -16,6 +16,7 @@ import {
   ArrowRight,
   CheckCircle
 } from "lucide-react";
+import SEO from "@/components/SEO";
 
 const Services = () => {
   const services = [
@@ -71,9 +72,43 @@ const Services = () => {
   ];
 
   return (
-    <div className="min-h-screen pt-16">
-      {/* Hero Section */}
-      <section className="py-20 bg-gradient-to-b from-background to-secondary">
+    <>
+      <SEO
+        title="Digital Marketing Services | SEO, PPC, Social Media & More | Namish Marketing"
+        description="Comprehensive digital marketing services including SEO, PPC advertising, social media marketing, content marketing, email marketing, and web development. Custom strategies for business growth."
+        keywords="digital marketing services, SEO services, PPC advertising, social media marketing, content marketing, email marketing, web development, marketing strategy, business growth"
+        canonical="/services"
+        ogImage="https://namishmarketing.com/services-og-image.jpg"
+        structuredData={{
+          "@context": "https://schema.org",
+          "@type": "Service",
+          "name": "Digital Marketing Services",
+          "description": "Comprehensive digital marketing services including SEO, PPC advertising, social media marketing, content marketing, email marketing, and web development.",
+          "provider": {
+            "@type": "Organization",
+            "name": "Namish Marketing",
+            "url": "https://namishmarketing.com"
+          },
+          "serviceType": "Digital Marketing",
+          "areaServed": "United States",
+          "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Digital Marketing Services",
+            "itemListElement": services.map(service => ({
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": service.title,
+                "description": service.description
+              },
+              "price": service.price
+            }))
+          }
+        }}
+      />
+      <div className="min-h-screen pt-16">
+        {/* Hero Section */}
+        <section className="py-20 bg-gradient-to-b from-background to-secondary">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center fade-in">
             <h1 className="text-4xl md:text-6xl font-bold mb-6">
@@ -186,7 +221,8 @@ const Services = () => {
           </div>
         </div>
       </section>
-    </div>
+      </div>
+    </>
   );
 };
 

@@ -4,6 +4,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/hooks/use-toast";
 import { Mail, Phone, MapPin, Calendar, Send } from "lucide-react";
+import SEO from "@/components/SEO";
 
 const Contact = () => {
   const { toast } = useToast();
@@ -33,7 +34,8 @@ Phone: ${formData.phone || 'Not provided'}
 Company: ${formData.company || 'Not provided'}
 
 Message:
-${formData.message}`;
+
+{formData.message}`;
 
     const mailtoUrl = `mailto:ajaysingh52x@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
     
@@ -67,9 +69,52 @@ ${formData.message}`;
   ];
 
   return (
-    <div className="min-h-screen pt-16">
-      {/* Hero Section */}
-      <section className="py-20 bg-gradient-to-b from-background to-secondary">
+    <>
+      <SEO
+        title="Contact Namish Marketing | Get Your Free Consultation | Digital Marketing Agency"
+        description="Ready to grow your business? Contact Namish Marketing for a free consultation. We offer comprehensive digital marketing services including SEO, PPC, social media, and more."
+        keywords="contact namish marketing, free consultation, digital marketing agency contact, business growth consultation, marketing strategy consultation"
+        canonical="/contact"
+        ogImage="https://namishmarketing.com/contact-og-image.jpg"
+        structuredData={{
+          "@context": "https://schema.org",
+          "@type": "ContactPage",
+          "name": "Contact Namish Marketing",
+          "description": "Get in touch with Namish Marketing for a free consultation on your digital marketing needs.",
+          "url": "https://namishmarketing.com/contact",
+          "mainEntity": {
+            "@type": "Organization",
+            "name": "Namish Marketing",
+            "contactPoint": [
+              {
+                "@type": "ContactPoint",
+                "telephone": "+91-9243716518",
+                "contactType": "customer service",
+                "availableLanguage": "English",
+                "hoursAvailable": {
+                  "@type": "OpeningHoursSpecification",
+                  "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+                  "opens": "09:00",
+                  "closes": "18:00"
+                }
+              },
+              {
+                "@type": "ContactPoint",
+                "email": "hello@namishmarketing.com",
+                "contactType": "customer service"
+              }
+            ],
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Madhya Pradesh",
+              "addressCountry": "India"
+            }
+          }
+        }}
+      />
+      <div className="min-h-screen pt-16">
+        {/* Hero Section */}
+        <section className="py-20 bg-gradient-to-b from-background to-secondary">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center fade-in">
             <h1 className="text-4xl md:text-6xl font-bold mb-6">
@@ -241,7 +286,8 @@ ${formData.message}`;
           </div>
         </div>
       </section> */}
-    </div>
+      </div>
+    </>
   );
 };
 

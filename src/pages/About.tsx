@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { Target, Users, TrendingUp, Award, ArrowRight } from "lucide-react";
+import SEO from "@/components/SEO";
 
 const About = () => {
   const values = [
@@ -27,9 +28,41 @@ const About = () => {
   ];
 
   return (
-    <div className="min-h-screen pt-16">
-      {/* Hero Section */}
-      <section className="py-20 bg-gradient-to-b from-background to-secondary">
+    <>
+      <SEO
+        title="About Namish Marketing | Digital Marketing Agency Team & Mission"
+        description="Learn about Namish Marketing's mission to help businesses grow with clarity, creativity, and consistency. Meet our team and discover our results-driven approach to digital marketing."
+        keywords="about namish marketing, digital marketing team, marketing agency mission, business growth partner, marketing strategy experts, team values"
+        canonical="/about"
+        ogImage="https://namishmarketing.com/about-og-image.jpg"
+        structuredData={{
+          "@context": "https://schema.org",
+          "@type": "AboutPage",
+          "name": "About Namish Marketing",
+          "description": "Learn about Namish Marketing's mission to help businesses grow with clarity, creativity, and consistency.",
+          "url": "https://namishmarketing.com/about",
+          "mainEntity": {
+            "@type": "Organization",
+            "name": "Namish Marketing",
+            "description": "Results-driven digital marketing agency helping startups and growing businesses achieve real results through SEO, PPC, social media, and strategic marketing.",
+            "url": "https://namishmarketing.com",
+            "foundingDate": "2019",
+            "numberOfEmployees": "10-50",
+            "slogan": "Your Growth. Our Mission.",
+            "knowsAbout": [
+              "Digital Marketing",
+              "SEO",
+              "PPC Advertising",
+              "Social Media Marketing",
+              "Content Marketing",
+              "Brand Strategy"
+            ]
+          }
+        }}
+      />
+      <div className="min-h-screen pt-16">
+        {/* Hero Section */}
+        <section className="py-20 bg-gradient-to-b from-background to-secondary">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center fade-in">
             <h1 className="text-4xl md:text-6xl font-bold mb-6">
@@ -76,8 +109,11 @@ const About = () => {
               <div className="relative overflow-hidden rounded-2xl">
                 <img
                   src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=600&h=400&fit=crop"
-                  alt="Team collaboration"
+                  alt="Namish Marketing team collaborating on digital marketing strategies"
                   className="w-full h-[400px] object-cover"
+                  loading="lazy"
+                  width={600}
+                  height={400}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent" />
               </div>
@@ -264,7 +300,8 @@ const About = () => {
           </div>
         </div>
       </section>
-    </div>
+      </div>
+    </>
   );
 };
 

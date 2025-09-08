@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { Calendar, Clock, ArrowRight, Search } from "lucide-react";
 import { Input } from "@/components/ui/input";
 import { useState } from "react";
+import SEO from "@/components/SEO";
 
 const Blog = () => {
   const [selectedCategory, setSelectedCategory] = useState("All");
@@ -81,9 +82,42 @@ const Blog = () => {
     : posts.filter(post => post.category === selectedCategory);
 
   return (
-    <div className="min-h-screen pt-16">
-      {/* Hero Section */}
-      <section className="py-20 bg-gradient-to-b from-background to-secondary">
+    <>
+      <SEO
+        title="Marketing Blog & Insights | Namish Marketing"
+        description="Stay ahead with actionable digital marketing strategies, SEO tips, content marketing insights, and growth tactics from Namish Marketing experts."
+        keywords="marketing blog, digital marketing insights, SEO tips, content marketing, social media marketing, PPC strategies, marketing trends, business growth"
+        canonical="/blog"
+        ogImage="https://namishmarketing.com/blog-og-image.jpg"
+        structuredData={{
+          "@context": "https://schema.org",
+          "@type": "Blog",
+          "name": "Namish Marketing Blog",
+          "description": "Marketing insights and strategies for growing businesses",
+          "url": "https://namishmarketing.com/blog",
+          "publisher": {
+            "@type": "Organization",
+            "name": "Namish Marketing",
+            "url": "https://namishmarketing.com"
+          },
+          "blogPost": posts.map(post => ({
+            "@type": "BlogPosting",
+            "headline": post.title,
+            "description": post.excerpt,
+            "url": `https://namishmarketing.com/blog/${post.slug}`,
+            "datePublished": post.date,
+            "author": {
+              "@type": "Organization",
+              "name": "Namish Marketing"
+            },
+            "image": post.image,
+            "keywords": post.category
+          }))
+        }}
+      />
+      <div className="min-h-screen pt-16">
+        {/* Hero Section */}
+        <section className="py-20 bg-gradient-to-b from-background to-secondary">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center fade-in">
             <h1 className="text-4xl md:text-6xl font-bold mb-6">
@@ -109,8 +143,11 @@ const Blog = () => {
                 <div className="relative overflow-hidden">
                   <img 
                     src={featuredPost.image}
-                    alt={featuredPost.title}
+                    alt={`${featuredPost.title} - Featured article about ${featuredPost.category.toLowerCase()}`}
                     className="w-full h-full min-h-[300px] object-cover group-hover:scale-105 transition-transform duration-500"
+                    loading="eager"
+                    width={800}
+                    height={400}
                   />
                   <div className="absolute top-6 left-6">
                     <span className="bg-primary text-primary-foreground px-4 py-2 rounded-full text-sm font-semibold">
@@ -184,8 +221,11 @@ const Blog = () => {
                 <div className="relative overflow-hidden">
                   <img 
                     src={post.image}
-                    alt={post.title}
+                    alt={`${post.title} - ${post.category} article about digital marketing`}
                     className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
+                    loading="lazy"
+                    width={400}
+                    height={250}
                   />
                   <div className="absolute top-4 left-4">
                     <span className="bg-primary text-primary-foreground px-3 py-1 rounded-full text-xs font-semibold">
@@ -252,7 +292,8 @@ const Blog = () => {
           </div>
         </div>
       </section>
-    </div>
+      </div>
+    </>
   );
 };
 
